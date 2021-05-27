@@ -1,5 +1,17 @@
 #!/bin/bash
 
+TARGET="$1"
+
+if [ -z $TARGET ]; then
+	echo -e "            _         _     "
+	echo -e "   ___ _ __| |_   ___| |__  "
+	echo -e "  / __| '__| __| / __| '_ \ "
+	echo -e " | (__| |  | |_ _\__ \ | | |"
+	echo -e "  \___|_|   \__(_)___/_| |_|"
+  	echo ""
+	exit
+fi
+
 if [[ $TARGET = "--help" ]]; then
 	echo -e "            _         _     "
 	echo -e "   ___ _ __| |_   ___| |__  "
